@@ -38,7 +38,7 @@ async function onPhoto(ctx) {
 
 const args = minimist(process.argv)
 const token = process.env.BOT_TOKEN || args.token
-const bot = new Telegraf("6061393200:AAFEh6pOMRvlmCY4Kj9cO-BxguNwjDxgZew")
+const bot = new Telegraf("5629176749:AAGR5q7HtJoEcWE-Ko2x2CxrXPEisdmtXa0")
 bot.start(ctx => ctx.reply('Welcome. Send an image with QR code'))
 bot.on('photo', onPhoto)
 bot.launch()
